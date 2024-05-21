@@ -1,10 +1,16 @@
 # Spotify Data Pipeline with AWS Glue and QuickSight
 
 ## Project Overview
-This project demonstrates an ETL pipeline to process and visualize Spotify data using AWS services.
-
+This project is an end-to-end ETL pipeline designed to process and analyze Spotify data using AWS services. Leveraging AWS Glue for data transformation, Amazon Athena for querying, and Amazon QuickSight for visualization, the pipeline seamlessly ingests raw Spotify data from S3 staging, applies transformations, and loads the transformed data into a structured data warehouse. With automated metadata management and serverless querying capabilities, this pipeline enables efficient analytics and visualization, empowering stakeholders to gain valuable insights into user behavior and track music trends.
 ## Architecture
 ![Architecture Diagram](architecture/Architecture.png)
+
+# Setup Guide
+
+## Prerequisites
+- AWS Account
+- S3 Buckets for staging and data warehouse
+- AWS Glue, Athena, and QuickSight permissions
 
 # Steps to Reproduce
 
