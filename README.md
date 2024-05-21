@@ -4,7 +4,7 @@
 This project demonstrates an ETL pipeline to process and visualize Spotify data using AWS services.
 
 ## Architecture
-![Architecture Diagram](architecture/architecture_diagram.png)
+![Architecture Diagram](architecture/ARCHITECTURE.png)
 
 ## Steps to Reproduce
 1. **Upload Data to S3**: [Instructions](docs/s3_bucket_structure.md)
