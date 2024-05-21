@@ -40,7 +40,7 @@ This project is an end-to-end ETL pipeline designed to process and analyze Spoti
 
 ## 3. **Run AWS Glue Crawler**<br>
 
-## 4. **Query Data with Amazon Athena**:
+## 4. **Query Data with Amazon Athena**
 
 ### Example Query
 ```sql
