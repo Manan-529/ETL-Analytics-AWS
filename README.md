@@ -8,9 +8,9 @@ This project demonstrates an ETL pipeline to process and visualize Spotify data 
 
 # Steps to Reproduce
 
-##1. **Upload Data to S3**:
+## 1. **Upload Data to S3**:
 
-# S3 Bucket Structure
+### S3 Bucket Structure
 
 ### Staging Bucket
 - **Name**: `staging`
