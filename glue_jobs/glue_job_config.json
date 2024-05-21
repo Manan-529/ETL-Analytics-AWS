@@ -1,29 +1,38 @@
 {
-	"Version": "2012-10-17",
-	"Statement": [
-		{
-			"Effect": "Allow",
-			"Action": [
-				"logs:CreateLogGroup",
-				"logs:CreateLogStream",
-				"logs:PutLogEvents",
-				"glue:GetDatabase",
-				"glue:GetDatabases",
-				"glue:CreateTable",
-				"glue:UpdateTable",
-				"glue:DeleteTable",
-				"glue:GetTable",
-				"glue:GetTables",
-				"glue:GetTableVersion",
-				"glue:GetTableVersions"
-			],
-			"Resource": [
-				"arn:aws:logs:us-east-2:381492195188:log-group:/aws-glue/*",
-				"arn:aws:logs:us-east-2:381492195188:log-group:/aws-glue/*:log-stream:*",
-				"arn:aws:glue:us-east-2:381492195188:catalog",
-				"arn:aws:glue:us-east-2:381492195188:database/*",
-				"arn:aws:glue:us-east-2:381492195188:table/*/*"
-			]
-		}
-	]
+	"jobConfig": {
+		"name": "fetl",
+		"description": "",
+		"role": "arn:aws:iam::381492195188:role/glue_s3",
+		"command": "glueetl",
+		"version": "4.0",
+		"runtime": null,
+		"workerType": "G.1X",
+		"numberOfWorkers": 5,
+		"maxCapacity": 5,
+		"maxRetries": 0,
+		"timeout": 2880,
+		"maxConcurrentRuns": 1,
+		"security": "none",
+		"scriptName": "fetl.py",
+		"scriptLocation": "s3://aws-glue-assets-381492195188-us-east-2/scripts/",
+		"language": "python-3",
+		"spark": true,
+		"sparkConfiguration": "standard",
+		"jobParameters": [],
+		"tags": [],
+		"jobMode": "VISUAL_MODE",
+		"createdOn": "2024-05-20T21:49:36.538Z",
+		"developerMode": false,
+		"connectionsList": [],
+		"temporaryDirectory": "s3://aws-glue-assets-381492195188-us-east-2/temporary/",
+		"logging": true,
+		"glueHiveMetastore": true,
+		"etlAutoTuning": false,
+		"metrics": true,
+		"observabilityMetrics": true,
+		"bookmark": "job-bookmark-disable",
+		"sparkPath": "s3://aws-glue-assets-381492195188-us-east-2/sparkHistoryLogs/",
+		"flexExecution": false,
+		"minFlexWorkers": null
+	}
 }
