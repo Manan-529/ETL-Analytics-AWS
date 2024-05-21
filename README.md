@@ -43,5 +43,5 @@ WHERE genre = "LoFi"
 GROUP BY artist_id
 ORDER BY streams DESC;
 ```
-<br>
+
 ## 5. **Visualize Data with QuickSight**
