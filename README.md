@@ -10,7 +10,7 @@ This project demonstrates an ETL pipeline to process and visualize Spotify data 
 1. **Upload Data to S3**: [Instructions](docs/s3_bucket_structure.md)
 2. **Set Up AWS Glue Jobs**: [Script and Configuration](glue_jobs/)
 3. **Run AWS Glue Crawler**
-4. **Query Data with Amazon Athena**: [Sample Queries](athena_queries/sample_queries.sql)
+4. **Query Data with Amazon Athena**: [Sample Queries](athena_queries/sample_query.sql)
 5. **Visualize Data with QuickSight**
 
 
